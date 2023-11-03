@@ -1,0 +1,2761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="google-site-verification" content="CkvkrITmT4ZSsppwpnb2ds2NlzOMjZXjCNWXDVFZw9U" />
+    <title>Local AutoCare</title>
+    <link rel="icon" href="https://i.ibb.co/jgjsx4x/07-F10614-2-BF3-4-CE2-BAE5-89285-E6-FE501-1-201-a.jpg" type="image/x-icon" class="logo" style="border-radius: 10px;">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://i.ibb.co/jgjsx4x/07-F10614-2-BF3-4-CE2-BAE5-89285-E6-FE501-1-201-a.jpg" class="logo" sizes="64x64">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://i.ibb.co/jgjsx4x/07-F10614-2-BF3-4-CE2-BAE5-89285-E6-FE501-1-201-a.jpg" class="logo">
+    <!-- Add other sizes and formats as needed -->
+   
+   
+    <style>
+        #total-cost-value {
+            background-color: black;
+            margin: 20px;
+        }
+.wash-button.custom:hover {
+    background-color: #00ffc3; /* Change the background color to orange when hovering */
+    color: #333333; /* Change the text color to white when hovering */
+  }
+
+  .wash-button.supreme:hover {
+    background-color: #4b0082; /* Change the background color to indigo when hovering */
+    color: #fff; /* Change the text color to white when hovering */
+  }
+       .wash-button.custom,
+  .wash-button.supreme {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .wash-button.custom:hover {
+    background-color: #00ffc3; /* Change the background color to orange when hovering */
+    color: #333333; /* Change the text color to white when hovering */
+  }
+
+  .wash-button.supreme:hover {
+    background-color: #4b0082; /* Change the background color to indigo when hovering */
+    color: #fff; /* Change the text color to white when hovering */
+  }
+      
+
+
+
+
+body {
+    background-image: url('https://i.ibb.co/FbvjwdV/6-C28-FB96-7-F33-44-DE-BEE9-131-A5-D8-AB8-A7-1-201-a.jpg');
+    background-size: cover; /* This ensures the image covers the entire background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+}
+
+
+.header-tags {
+gap: 10px;
+}
+
+
+
+
+.clicked-animation {
+    transform: scale(1.1); /* Scale the button to 110% of its original size */
+    transition: transform 0.3s ease; /* Add a smooth transition for the scaling effect */
+}
+
+
+       
+       
+
+
+        .clicked-animation {
+    transform: scale(1.1); /* Scale the button to 110% of its original size */
+    transition: transform 0.3s ease; /* Add a smooth transition for the scaling effect */
+}
+
+
+/* CSS for larger screens */
+@media (min-width: 768px) {
+    /* Add styles for larger screens here */
+}
+
+
+/* CSS for smaller screens (e.g., phones) */
+@media (max-width: 767px) {
+    /* Add styles for smaller screens here */
+    body {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+    /* You may need to make other style adjustments here */
+}
+
+
+.image {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+    .image {
+        width:100%;
+        border-radius: 20px;
+        height: auto;
+    }
+
+
+   
+
+
+        .wash-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+
+.wash-button:hover {
+     /* Define button hover effect */
+     transition: background-color 0.3s ease;
+     
+}
+
+
+
+
+
+
+.wash-button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.premium {
+    background-color: gold;
+    color: #333; /* Text color for premium button */
+     /* Define button hover effect */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+
+.exterior {
+    background-color: rgb(0, 168, 241);
+    color: #fff; /* Text color for exterior button */
+     /* Define button hover effect */
+            transition: background-color 0.3s ease;
+}
+
+.supreme {
+    background-color: #800080;
+    color: white;
+}
+
+
+python -m pip install --upgrade pip
+
+
+.interior {
+    background-color: #e74c3c;
+    color: #fff; /* Text color for interior button */
+     /* Define button hover effect */
+            transition: background-color 0.3s ease;
+}
+
+
+.standard {
+    background-color: #27ae60;
+    color: #fff; /* Text color for standard button */
+     /* Define button hover effect */
+            transition: background-color 0.3s ease;
+}
+
+
+        .exterior:hover {
+            background-color: #2980b9;
+             /* Define button hover effect */
+             transition: background-color 0.3s ease;
+        }
+        .interior:hover {
+            background-color: #ae4646;
+             /* Define button hover effect */
+             transition: background-color 0.3s ease;
+        }
+        .premium:hover {
+  background-color: #fff9bf;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 0 20px #ffe070;
+  transform: scale(1.1); /* You can adjust the scale factor as needed for the desired size increase */
+}
+
+        .standard:hover {
+            background-color: #219139;
+             /* Define button hover effect */
+             transition: background-color 0.3s ease;
+        }
+
+        
+
+
+
+
+
+
+        .inputs {
+             /* Define button background color */
+            background-color: #dddddd;
+            /* Define button text color */
+            color: #ffffff;
+            /* Add padding to the button */
+            padding: 10px 20px;
+            /* Add rounded corners to the button */
+            border-radius: 10px;
+            /* Add a border to the button */
+            border: 2px solid #333333;
+            /* Define button hover effect */
+            transition: background-color 0.3s ease;
+        }
+
+
+       
+    /* ... (Previous CSS code) ... */
+    /* style the header */
+   
+
+
+.logo {
+    width: 150px;
+    height: auto;
+    border-radius: 20px; /* Add this to round the right side of the logo */
+    margin-right: 20px;
+}
+
+
+    header h1 {
+        font-size: 36px;
+    }
+
+
+    /* Style the navigation menu */
+    nav ul {
+        list-style-type: none;
+    }
+
+
+    nav ul li {
+        display: inline;
+        margin-right: auto;
+    }
+
+
+    nav a {
+        text-decoration: none;
+        color: #747474;
+        font-weight: bold;
+    }
+
+
+    /* ... (Continued CSS code) ... */
+
+
+   
+
+
+
+
+        /* Reset some default styles */
+        body, h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #265b7e;
+            color: #ffffff;
+           
+         
+        }
+
+
+        .Bold-P {
+            font-weight: bold;
+        }
+
+
+
+
+        /* Style the header section */
+       /* Style the header section */
+/* Style the header section */
+.header {
+    background-color: black;
+    color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Other common styles for all sections */
+    text-align: center;
+    top: 0;
+    width: auto;
+    height: auto;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+   
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+    max-height: 30%;
+    transition: top 0.3s; /* Add a smooth transition effect */
+    z-index: 1000; /* Ensure the header is on top of other content */
+    opacity: 1; /* Initially make the header transparent (completely hidden) */
+    transition: opacity 0.3s; /* Add a smooth transition effect on the opacity */
+  
+   border-bottom-right-radius: 20px;
+
+   
+}  
+
+
+
+
+
+
+
+img {
+    float: left; /* or float: right; */
+    margin-right: 10px; /* Adjust margin as needed to create spacing between the image and text */
+}
+h2 {
+    clear: both; /* Clear floats before displaying the heading */
+}
+.block-element {
+    display: inline-block;
+    width: 200px; /* Adjust the width as needed */
+    margin-right: 10px; /* Add some margin to create space between elements */
+}
+
+
+
+
+/* Media query for smaller screens (e.g., phones) */
+@media (max-width: 767px) {
+    .header {
+        font-size: 24px; /* Adjust the font size for smaller screens */
+        /* Other header styles for smaller screens */
+    }
+}
+
+
+
+
+
+
+        .logo {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  
+     /* Style the table */
+        table {
+            width: 100%;
+            border-collapse: space;
+            margin: 20px 0;
+            height: 70%;
+            color: white;
+        }
+
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+
+        th {
+            background-color: #00a8f1;
+            color: white;
+           
+        }
+
+
+        tr {
+            background-color: #212121;
+        }
+
+
+        tr:hover {
+            background-color: #242424;
+           
+        }
+
+
+        /* CSS for list items in details column */
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            padding-left: 0;
+            border-radius: 20px;
+        }
+
+
+        li {
+            margin-bottom: 5px;
+            border-radius: 20px;
+        }
+
+    nav a {
+            display: none;
+    }
+    nav {
+    display: none;
+    }
+  /* Add other styles specific to smaller screens here */
+}
+
+
+
+
+
+
+
+
+        header h1 {
+            font-size: 36px;
+            color: white;
+        }
+
+
+        /* Style the navigation menu */
+        nav ul {
+            list-style-type: none;
+            color: white;
+        }
+
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+
+        nav a {
+            text-decoration: none;
+            color: #C1F200;
+            font-weight: bold;
+            transform: scale(1); /* Initial scale */
+    transition: transform 0.3s ease-in-out; /* Transition effect */
+    &:hover {
+        transform: scale(1.1); /* Scale on hover */
+    }
+
+
+
+
+
+
+        }
+
+
+        /* Style the main content sections */
+        section {
+           
+        padding: 20px;
+            background-color: #333;
+             color: white;
+    /* Other styles for the section */
+
+
+        }
+
+
+       
+        #review-text {
+            font-family: arial;
+            background-color: #265b7e;
+            color: rgb(255, 255, 255);
+            border-radius: 5px;
+            box-shadow: 0px;
+            border-color: #676767;
+        }
+
+
+        #name {
+            font-family: arial;
+            background-color: #265b7e;
+            color: rgb(255, 255, 255);
+            border-radius: 5px;
+            box-shadow: 0px;
+            border-color: #676767;
+        }
+
+
+        #rating {
+            font-family: arial;
+            background-color: #265b7e;
+            color: rgb(255, 255, 255);
+            border-radius: 5px;
+            box-shadow: 0px;
+            border-color: #676767;
+        }
+
+
+.mybutton {
+  display: inline-block;
+  position: relative;
+  background-color: #AAA;
+  background-image: linear-gradient(
+    hsla(0, 0%, 100%, 0.6),
+    hsla(0, 0%, 100%, 0) 50%,
+    hsla(0, 0%, 0%, 0.3) 50%,
+    hsla(0, 0%, 100%, 0.2)
+  );
+  font-size: 14px; /* Adjust the font size */
+  font-family: sans-serif;
+  color: white;
+  padding: 10px; /* Adjust the padding */
+  text-shadow:
+    0 0 10px hsla(0, 0%, 100%, 1),
+    0 2px 4px hsla(0, 0%, 0%, 0.7);
+  border: none;
+  border-radius: 5px; /* Adjust the border radius */
+  margin: 10px;
+  box-shadow:
+    inset 0 -5px 20px hsla(0, 0%, 0%, 0.4),
+    inset 0 5px 20px hsla(0, 0%, 100%, 0.4),
+    -5px 5px 5px hsla(0, 0%, 0%, 0.15), /* Adjust the drop shadow */
+    5px 5px 10px hsla(0, 0%, 0%, 0.2);
+  cursor: pointer;
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+/* Highlight */
+.mybutton:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 10px; /* Adjust the position */
+  right: 10px; /* Adjust the position */
+  top: 2px; /* Adjust the position */
+  height: 10px; /* Adjust the size */
+  border-radius: 5px; /* Adjust the border radius */
+  background: linear-gradient(
+    hsla(0, 0%, 100%, 0.8),
+    hsla(0, 0%, 100%, 0)
+  );
+}
+
+.mybutton:hover {
+  transform: scale(1.05);
+  box-shadow:
+    inset 0 -5px 20px hsla(0, 0%, 0%, 0.4),
+    inset 0 5px 20px hsla(0, 0%, 100%, 0.4),
+    -8px 8px 5px hsla(0, 0%, 0%, 0.15),
+    8px 8px 10px hsla(0, 0%, 0%, 0.2); /* Adjust the drop shadow */
+}
+
+
+
+        .clear {
+            /* Define button background color */
+            background-color: #dc5d5d;
+            /* Define button text color */
+            color: #fff;
+            /* Add padding to the button */
+            padding: 10px 20px;
+            /* Add rounded corners to the button */
+            border-radius: 5px;
+            /* Add a border to the button */
+            border: none;
+            /* Define button hover effect */
+            transition: background-color 0.3s ease;
+        }
+
+
+        .clear:hover {
+            background-color: #bd5151;
+        }
+
+
+        /* Add hover effect when hovering over the button */
+        .mybutton:hover {
+            background-color: #77ff22;
+        }
+
+
+        .inputs:hover {
+            background-color:#000000;
+        }
+
+
+        section h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+
+        section p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+
+        /* Style the table */
+        table {
+            width: 100%;
+            border-collapse: space;
+            margin: 20px 0;
+           
+            color: white;
+        }
+
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+
+        th {
+            background-color: #00a8f1;
+            color: white;
+           
+        }
+
+
+        tr {
+            background-color: #212121;
+        }
+
+
+        tr:hover {
+            background-color: #242424;
+           
+        }
+
+
+        /* CSS for list items in details column */
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            padding-left: 0;
+            border-radius: 20px;
+        }
+
+
+        li {
+            margin-bottom: 5px;
+            border-radius: 20px;
+        }
+
+
+        #contact {
+            font-style: italic;
+        }
+
+
+        /* Style the footer */
+        footer {
+            background-color: #265b7e;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+        }
+        .local {
+            color:rgb(255, 255, 255);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+        }
+        .space {
+            color:  rgb(33, 33, 33);
+        }
+        .autocare {
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #2980b9
+        }
+
+
+        #tagsbeforehtml {
+            background-image: url('file:///Users/alexwright/Pictures/Photos%20Library.photoslibrary/resources/renders/6/6C28FB96-7F33-44DE-BEE9-131A5D8AB8A7_1_201_a.jpeg');
+    background-size: cover; /* This ensures the image covers the entire background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    color: #f4f4f4;
+    box-shadow: none; /* No shadow for this section */
+    /* Other styles for the excluded section */
+        }
+        .background {
+            background-image: url('file:///Users/alexwright/Pictures/Photos%20Library.photoslibrary/resources/renders/6/6C28FB96-7F33-44DE-BEE9-131A5D8AB8A7_1_201_a.jpeg');
+    background-size: cover; /* This ensures the image covers the entire background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+        }
+
+
+        .section h1 {
+            background-image: url('file:///Users/alexwright/Pictures/Photos%20Library.photoslibrary/resources/renders/6/6C28FB96-7F33-44DE-BEE9-131A5D8AB8A7_1_201_a.jpeg');
+    background-size: cover; /* This ensures the image covers the entire background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+        }
+       
+/* Hide the header on screens with a maximum width of 600px (adjust as needed) */
+@media screen and (max-width: 600px) {
+    #site-header {
+        display: none;
+    }
+}
+
+
+#promotion-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+
+.card-left,
+.card-right {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.card-left img,
+.card-right img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+
+
+
+.header-tags:hover {
+    color: white;
+}
+
+
+        .header-tags {
+            transition: color 0.3s ease;
+        }
+       /* Style for the custom checkboxes */
+.checkbox-custom {
+    display: none; /* Hide the default checkbox */
+}
+
+
+.checkbox-custom {
+    display: none; /* Hide the default checkbox */
+}
+
+
+.checkbox-label:before {
+    content: ""; /* Unicode character for a checkmark */
+    display: inline-block;
+    width: 16px; /* Adjust the size of the checkmark */
+    height: 16px;
+    margin-right: 8px; /* Add some spacing between the checkmark and label text */
+    background-color: #fff; /* Background color for the unchecked checkbox */
+    border: 1px solid #000; /* Border for the checkbox */
+    text-align: center;
+    line-height: 16px;
+    border-radius: 5px;
+}
+
+
+.checkbox-custom:checked + .checkbox-label:before {
+    background-color: #bfff00; /* Background color for the checked checkbox */
+    color: #333333; /* Color of the checkmark for checked checkbox */
+    border-radius: 5px;
+    border-color: #007bff; /* Border color for the checked checkbox */
+    content: "\2713"; /* Unicode character for a checkmark */
+}
+.checkbox-custom:checked {
+    content: "\2713"; /* Unicode character for a checkmark */
+}
+.tbhtml {
+    color: #ffffff
+}
+
+
+#opening-image {
+    margin-bottom: 1000px;
+}
+.link-styled-as-text {
+    margin-left: 20px;
+    border-radius:5px;
+    padding: 5px;
+    font-style: none;
+    text-decoration: none;
+    color: #C1F200;
+}
+
+
+#services {
+    background-color: #2980b9;
+
+}
+#total-cost {
+    background-color: #2980b9;
+}
+
+
+#pricing {
+    background-color: #C1F200;
+     box-shadow: 0 0 40px green;
+     padding: 20px;
+}
+.table-head {
+    color: white;
+}
+#contact {
+    background-color: #C1F200;
+    color: #333333;
+}
+
+
+
+
+
+ /* Media query for screens with a minimum width of 768px (for larger screens) */
+        @media (max-width: 768px) {
+       
+        .light-mode {
+            border-color: #333333;
+            color: #333333;
+            background-color: #333333;
+            font-size: 0px;
+        }
+
+
+    
+
+
+
+
+
+        .header-tags {
+        display: none;
+
+
+        }
+        body {
+    background-image: url('https://i.ibb.co/jgjsx4x/07-F10614-2-BF3-4-CE2-BAE5-89285-E6-FE501-1-201-a.jpg');
+    background-size: cover; /* This ensures the image covers the entire background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+}
+        .local {
+        font-size: 15px;
+        }
+        .autocare {
+        font-size: 15px;
+        }
+        .space {
+        font-size: 15px;
+        color: black;
+        opacity: 0;
+        }
+        .welcome-to {
+        font-size: 15px;
+        }
+
+
+
+
+        .header-tags {
+        font-size: 15px;
+        opacity: 0.6;
+
+
+        }
+        .tag-6 {
+            color: light-green;
+        }
+          .header {
+  background: linear-gradient(to bottom, #3498db, #2980b9); /* Gradient background */
+  color: #fff; /* Text color */
+  padding: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Subtle box shadow */
+  text-align: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: flex;
+  align-items: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 18px; /* Larger font size for improved readability */
+}
+
+        }
+
+
+#reviews {
+background-color: #00ccff;
+}
+
+
+.tbhtml {
+opacity: 0%;
+}
+.footer {
+     background-color: #265b7e;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+}
+/* Set the height of the HTML and body elements to 100% */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Ensure any parent elements of #location also have a defined height */
+/* For example, if #location is inside a container with ID #container */
+
+
+/* Style the #location element with the background image */
+#location {
+    background-image: url('https://i.ibb.co/c2yFF3K/470466-BA-073-C-4676-90-CE-36-EDABAD0-A0-D-1-201-a.jpg');
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    max-width: 97%;
+    /* Other background properties */
+     color: white; /* Set the text color to white */
+    text-shadow: -1px -1px 0 #000, /* Top-left */
+        1px -1px 0 #000, /* Top-right */
+        -1px 1px 0 #000, /* Bottom-left */
+        1px 1px 0 #000; /* Bottom-right */
+}
+.calendly-button {
+  background-color: #007BFF; /* Button background color */
+  color: #ffffff; /* Button text color */
+  padding: 10px 20px; /* Adjust padding as needed */
+  border: none;
+  border-radius: 5px; /* Adjust border-radius for rounded corners */
+  cursor: pointer;
+  font-size: 16px; /* Adjust font size as needed */
+  margin: 10px; /* Add margin for spacing between buttons */
+}
+
+.calendly-button:hover {
+  background-color: #0056b3; /* Change color on hover (optional) */
+}
+
+
+
+
+
+
+ .tag1 {
+    color: #4CAF50; /* Light green for the first tag */
+  }
+
+  .tag2 {
+    color: #64D800; /* Another shade of light green for the second tag */
+  }
+
+  .tag3 {
+    color: #78DD50; /* Another shade of light green for the third tag */
+  }
+
+  .tag4 {
+    color: #88E84A; /* Another shade of light green for the fourth tag */
+  }
+
+  .tag5 {
+    color: #9AEE4A; /* Another shade of light green for the fifth tag */
+  }
+
+  .tag6 {
+    color: #A8F148; /* Another shade of light green for the sixth tag */
+  }
+
+
+.logo {
+    margin-right: 20px; /* Adjust the margin as needed to control the spacing between the logo and the "Why Us?" section. */
+}
+
+
+ 
+    #highlighted-element {
+  background-color: yellow; /* Highlighting style */
+  position: absolute;
+  z-index: 1;
+  opacity: 0; /* Start with no highlight */
+  transition: opacity 0.3s; /* Animation effect */
+}
+.instruction-container {
+    position: fixed;
+}
+       
+
+
+
+
+
+
+
+
+nav {
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    transition: all 0.3s;
+    border-radius: 10px;
+}
+
+nav a:hover {
+    background-color: #555;
+    border-radius: 10px;
+     box-shadow: 0 0 40px cyan;
+    transition: all 0.3s;
+}
+
+
+
+
+
+
+
+
+       
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.instructions {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+li {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+p {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+#instructionsPopup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#closeInstructionsButton {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+button#showInstructionsButton {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button#showInstructionsButton:hover {
+    background-color: black;
+    transition: background-color 0.3s ease;
+}
+
+
+
+
+
+
+.premium-li {
+     list-style-type: none; /* Remove default bullet points */
+  padding: 0;
+  margin: 0;
+}
+
+.premium-li li::before {
+  content: "●"; /* Use a gold-colored disc (●) as the bullet point */
+  color: gold; /* Set the color to gold or your preferred shade */
+  margin-right: 5px; /* Adjust the spacing between the bullet and the text */
+  font-size: 20px; /* Adjust the size as needed */
+  }
+
+
+
+
+
+
+
+
+
+
+#disqus_thread {
+    background-color: black;
+    padding: 20px;
+    border-radius: 20px;
+     box-shadow: 0 0 40px blue;
+}
+
+
+
+
+
+
+#calendar-why-us {
+    background-color: c2yFF3K;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+     box-shadow: 0 0 40px purple;
+}
+
+
+
+
+
+#pricing-div {
+    padding: 20px;
+     box-shadow: 0 0 40px green;
+     border-radius: 20px;
+     background-color: black;
+     color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+why-us-div {
+    box-shadow: 0 0 20px yellow;
+      border-radius: 20px;
+     background-color: white;
+     color: #333;
+     padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card-1 {
+    /* First half of the box shadow (left side) */
+    box-shadow: 5px 0 20px yellow, /* Horizontal shadow with a red color */
+                -5px 0 20px red; /* Horizontal shadow with a green color */
+                border-radius: 20px;
+
+}
+.card-2 {
+     /* First half of the box shadow (left side) */
+    box-shadow: 5px 0 20px green, /* Horizontal shadow with a red color */
+                -5px 0 20px #00c3ff; /* Horizontal shadow with a green color */
+                border-radius: 20px;
+
+}
+
+.card-3 {
+     /* First half of the box shadow (left side) */
+    box-shadow: 5px 0 20px pink, /* Horizontal shadow with a red color */
+                -5px 0 20px purple; /* Horizontal shadow with a green color */
+                border-radius: 20px;
+
+}
+
+
+
+
+/* Apply the hover effect to the .premium button */
+.premium #services:hover {
+  background-color: gold;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 0 20px yellow;
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+#showInstructionsButton:hover {
+    background-color: white;
+    
+}
+
+
+
+#showInstructionsButton {
+    background-color: white;
+}
+
+/* Your CSS styles go here */
+        .our-products {
+            background-color: white;
+
+        }
+
+        .product-card {
+            display: flex;
+            margin: 20px;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px yellow;
+            background-color: black;
+        }
+
+        .product-image img {
+            max-width: 150px;
+            max-height: 150px;
+            border-radius: 10px;
+        }
+
+        .product-details {
+            padding-left: 10px;
+        }
+
+    
+       
+
+
+
+
+.header-tags tag3:hover {
+color: white;
+}
+
+
+
+/* New/Normal Button Style */
+.normal-button {
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.signin-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+form {
+    margin-top: 20px;
+}
+
+.input-container {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+</head>
+<body>
+    <h1 class="tbhtml" style="opacity: 0;">a</h1>
+    <h1 class="tbhtml" style="opacity: 0;">a</h1>
+    <h1 class="tbhtml" style="opacity: 0;">a</h1>
+    <h1 class="tbhtml" style="opacity: 0;">a</h1>
+    <h3 class="tbhtml" style="opacity: 0;">a</h3>
+    <h1 class="tbhtml" style="opacity: 0;">a</h1>
+   
+   
+  <header class="header">
+    <img src="https://i.ibb.co/Hr9LhNM/6-C28-FB96-7-F33-44-DE-BEE9-131-A5-D8-AB8-A7-1-201-a.jpg" alt="my logo" class="logo" style="border-radius: 10px; opacity: 1; width: 110px; height: auto; text-align: center;">
+ <h1>Local AutoCare</h1>
+    <nav>
+        <ul>
+            <li><a href="#services" class="header-tags tag1">Services</a></li>
+            <li><a href="#pricing" class="header-tags tag2">Pricing</a></li>
+            <li><a href="#contact" class "header-tags tag3">Contact</a></li>
+            <li><a href="#reviews" class="header-tags tag4">Reviews</a></li>
+            <li><a href="#promotions" class="header-tags tag5">Upgrade to VIP</a></li>
+            <li><a href="#our-team" class="header-tags tag6">Our Team</a></li>
+        </ul>
+    </nav>
+
+
+</header>
+
+
+
+   <section id="opening-image" style="background-color: #fff; color: #333333;">
+    <img src="https://i.ibb.co/th9LxTJ/bmw.jpg" alt="BMW" class="rounded-image" style="border-radius: 20px; width: 100%; height: auto; box-shadow: 0 0 40px cyan;">
+  
+
+ <blockquote style="padding-top: 20px;">
+
+<h3 style="opacity: 0;"> a </h3>
+<h1 style="color: #000; margin-top: 20px; padding-top: 20px;"></h1>
+       <h2 style="font-size: 40px; color: #000; margin-top: 20px;">Here at Local AutoCare</h2>
+        <p style="font-size: 20px; color: #000; margin-top: 10px;">We really care about your car. How it looks and feels is the most important part of your car. Once we are done with your car, we always have a thorough look inside and out to make sure your car is the cleanest it can be. We take pride in your cars integrety, putting all of our hard work and effort to make it look and feel brand new!</p>
+   
+ </blockquote>
+
+
+
+
+
+
+<script src="https://cdn.auth0.com/js/auth0/1.0/auth0.min.js"></script>
+
+
+<script>
+  var webAuth = new window.auth0.WebAuth({
+    domain: 'dev-wpk40qgn6eobzwxn.au.auth0.com',
+    clientID: 'DQ0rJ8uSfDgManxmt5QQcTjG1RdxljMr',
+  });
+</script>
+
+<button onclick="login()">Login</button>
+
+<script>
+  function login() {
+    webAuth.authorize();
+  }
+</script>
+
+<button onclick="logout()">Logout</button>
+
+<script>
+  function logout() {
+    webAuth.logout();
+  }
+</script>
+
+<script>
+  // Check if the URL contains the hash fragment
+  if (window.location.hash) {
+    webAuth.parseHash({ hash: window.location.hash }, function(err, authResult) {
+      if (authResult && authResult.accessToken) {
+        // Use the access token for making authenticated requests
+        console.log('Access Token:', authResult.accessToken);
+        // Retrieve the user's profile data
+        webAuth.client.userInfo(authResult.accessToken, function(err, user) {
+          if (err) {
+            // Handle error
+          } else {
+            // Use the user's profile data
+            console.log('User Profile:', user);
+          }
+        });
+      } else if (err) {
+        // Handle error
+      }
+    });
+  }
+</script>
+
+
+
+   </section>
+       
+     
+
+
+    <section id="services" style="background-color: #00ccff;">
+
+         <div id="services-div" style="background-color: black; box-shadow: 0 0 20px blue; padding: 20px; border-radius: 20px;"> 
+        <h2>Our Services</h2>
+        <p>We offer a range of car washing and detailing services to enhance the appearance and performance of your vehicle.</p>
+  
+
+
+
+<div id="instructionsPopup" style="border-radius: 20px;">
+    <span id="closeInstructionsButton" style="color: red; padding: 20px;">X</span>
+    <h2 style="color: black">Instructions</h2>
+    <p style="color: black">Step 1: Start by choosing the specific service you wish to avail. We offer a range of services to meet your needs.</p>
+    <p style="color: black">Step 2: Click on the "Schedule" button or the equivalent option that allows you to choose your preferred time.</p>
+    <p style="color: black">Step 3: Pick a suitable date from the calendar and then select your preferred time slot for the chosen service.</p>
+    <p style="color: black">Step 4: After confirming your selected options, click the "Submit" button to complete the scheduling process.</p>
+</div>
+
+
+     <div id="instructionsButton"> 
+<button id="showInstructionsButton" style="color: black; background-color: white;">Show Instructions</button>
+</div>
+
+
+
+         
+          <div class="service">
+        <button onclick="showService('exterior')" class="wash-button exterior">Exterior</button>
+        <button onclick="showService('interior')" class="wash-button interior">Interior</button>
+       
+       
+       
+        <button onclick="showService('standard')" class="wash-button standard">Standard</button>
+       <button onclick="showService('supreme')" class="wash-button supreme">Supreme</button>
+
+        <button onclick="showService('premium')" class="wash-button premium">Premium 👑</button>
+       
+        <button onclick="showService('custom')" class="wash-button custom">Custom Wash ($5 Extra)</button>
+       
+            </div>
+        <div id="car-selector">
+            <label for="car-type">Select a Car Type: </label>
+<select id="car-type" class="mybutton">
+    <option value="compact" class="mybutton">Compact Car (No Extra Cost)</option>
+    <option value="sedan" class="mybutton">Sedan (No Extra Cost)</option>
+    <option value="suv" class="mybutton">SUV ($10 Extra)</option>
+    <option value="anythingBigger" class="mybutton">Anything Bigger ($30 Extra)</option>
+    <!-- Add more car types as needed -->
+</select>
+<div id="total-cost" style="background-color: black; margin: 20px;">
+               
+            <p style="background-color: black; margin: 20px;"><strong style="background-color: black; margin: 20px;">Total Cost:</strong> <span id="total-cost-value">0</span></p>
+
+
+            </div>
+
+        </div>
+
+
+     
+         </div>
+   
+        <div class="service-details" style="margin-top: 20px;">
+            <div id="standard-service" style="display: none;">
+                <h3>Standard</h3>
+                <p>The Standard service provides a quick and convenient way to keep your car clean. Here's how it benefits your vehicle:</p>
+                <ul>
+                    <li>Removes dirt and grime from the exterior.</li>
+                    <li>Vacuums and cleans the interior, improving the overall look and feel.</li>
+                    <li>Wheels and tires are cleaned.</li>
+                    <li>Interior surfaces are wiped.</li>
+                    <li>Helps maintain your car's value and appearance.</li>
+                </ul>
+                <p>This wash is priced at $35.</p>
+
+  <!-- Button for the "Standard" option -->
+  <button class="wash-button standard" onclick="openCalendlyPopup('https://calendly.com/localautocare10/standard')">Schedule Standard</button>
+
+            </div>
+            <div id="premium-service" style="display: none;">
+                <h3>Premium 👑</h3>
+                <p>The Premium service is a comprehensive cleaning and valet for car enthusiasts who care deeply about their vehicle's well-being. Here's how it benefits your car:</p>
+                <ul class="premium-li">
+                    <li>Thorough vacuuming and carpet valet to remove dirt and debris.</li>
+                    <li>Exterior wash and wax for a brilliant shine and paint protection.</li>
+                    <li>Wheel cleaning and shining for a like-new appearance.</li>
+                    <li>Interior surfaces are meticulously wiped and shined.</li>
+                    <li>Fragrance treatment to leave your car smelling brand new.</li>
+                    <li>Engine bay cleaning for a clean and organized engine compartment.</li>
+                    <li>Exhaust pipe cleaning and shining for added visual appeal.</li>
+                    <li>Boot cleaning, vacuuming, and wiping.</li>
+                    <li>Window cleaning for clear visibility.</li>
+                    <li>Enhances your car's aesthetics and resale value.</li>
+                </ul>
+                <p>This wash is priced at $50.</p>
+                  <!-- Button for the "Premium" option -->
+  <button class="wash-button premium" onclick="openCalendlyPopup('https://calendly.com/localautocare10/premium')">Schedule Premium</button>
+
+            </div>
+   
+            <div id="interior-service" style="display: none;">
+                <h3>Interior</h3>
+                <p>The Interior service focuses on revitalizing your car's interior. Here's how it benefits your vehicle:</p>
+                <ul>
+                    <li>Thorough vacuuming and carpet valet to remove dirt and debris.</li>
+                    <li>Interior surfaces are expertly wiped and shined for a clean and fresh look.</li>
+                    <li>Fragrance treatment leaves your car smelling brand new.</li>
+                    <li>Boot cleaning, vacuuming, and wiping.</li>
+                    <li>Window cleaning for clear visibility.</li>
+                    <li>Improves interior aesthetics and comfort.</li>
+                </ul>
+                <p>This wash is priced at $30.</p>
+             <!-- Interior Service -->
+  <button class="wash-button interior" onclick="openCalendlyPopup('https://calendly.com/localautocare10/interior')">Schedule Interior</button>
+
+             </div>
+            <div id="exterior-service" style="display: none;">
+                <h3>Exterior</h3>
+                <p>The Exterior service is designed to enhance your car's exterior appearance and protection. Here's how it benefits your vehicle:</p>
+                <ul>
+                    <li>Thorough wash and wax to protect the paint and maintain its shine.</li>
+                    <li>Wheel cleaning and shining for an impressive look.</li>
+                    <li>Engine bay cleaning for a clean and organized engine compartment.</li>
+                    <li>Exhaust pipe cleaning and shining for added visual appeal.</li>
+                    <li>Preserves your car's exterior and extends its lifespan.</li>
+                </ul>
+                <p>This wash is priced at $20.</p>
+               <!-- Exterior Service -->
+  <button class="wash-button exterior" onclick="openCalendlyPopup('https://calendly.com/localautocare10/exterior')">Schedule Exterior</button>
+
+
+                    </div>
+                         
+
+
+                    <div id="supreme-service" style="display: none;">
+            <h3>Supreme</h3>
+            <p>The supreme wash is a good wash for a mid-range between the premium and standard wash.</p>
+            <ul>
+                <li>Removes dirt and grime from the exterior, protecting the paint, and giving a clean shine.</li>
+                    <li>Vacuums and cleans the interior, improving the overall look and feel.</li>
+                    <li>Wheels and tires are cleaned and shined for a polished appearance.</li>
+                    <li>Interior surfaces are wiped and shined for a fresh, interior with a polish to make it shine.</li>
+                    <li>Provides a ultra glossy and clean car.</li>
+                 </ul>
+            <p>This wash is priced at $40.</p>
+            <!-- Button for the "Supreme" option -->
+            <button class="wash-button supreme" onclick="openCalendlyPopup('https://calendly.com/localautocare10/supreme')">Schedule Supreme</button>
+        </div>
+
+
+
+
+              <div id="custom-service" style="display: none;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               
+   
+    <h3>Custom Wash</h3>
+    <p>Select the services you want:</p>
+    <input type="checkbox" id="carpet-valet" name="carpet-valet" value="5" class="checkbox-custom">
+    <label for="carpet-valet" class="checkbox-label">Carpet Valet</label><br>
+    <input type="checkbox" id="interior-wipe" name="interior-wipe" value="5" class="checkbox-custom">
+    <label for="interior-wipe" class="checkbox-label">Interior Wipe</label><br>
+    <input type="checkbox" id="boot-clean" name="boot-clean" value="5" class="checkbox-custom">
+    <label for="boot-clean" class="checkbox-label">Boot Clean</label><br>
+    <input type="checkbox" id="wash-wax" name="wash-wax" value="10" class="checkbox-custom">
+    <label for="wash-wax" class="checkbox-label">Wash and Wax</label><br>
+    <input type="checkbox" id="wheels" name="wheels" value="5" class="checkbox-custom">
+    <label for="wheels" class="checkbox-label">Wheel Clean and Shine</label><br>
+    <input type="checkbox" id="engine" name="engine" value="5" class="checkbox-custom">
+    <label for="engine" class="checkbox-label">Engine Bay Clean</label><br>
+    <input type="checkbox" id="fragrence" name="fragrence" value="5" class="checkbox-custom">
+    <label for="fragrence" class="checkbox-label">Fragrences</label><br>
+    <h1 style="opacity: 0;"> a </h1>
+    <!-- Add more checkboxes for different services -->
+    
+  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=localautocare10@gmail.com&su=Subject%20Here&body=Your%20message%20here" target="_blank">
+  <button class="mybutton">Send Email</button>
+</a>
+
+<p>Unfortunatly, you can not schedule an appointment via a button for the custom wash. Please send us an email. Please define which services you want.</p>
+
+
+
+ 
+    </div>
+   
+   
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+    </section>
+
+
+   
+    
+        
+    
+   
+    <section id="reviews">
+
+
+   
+           
+            <div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://local-autocare.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+       
+     
+        </section>
+
+
+
+
+
+
+   
+        <section id="pricing">
+            <div id="pricing-div">
+            <h2 class="table-head">Pricing</h2>
+            <p class="table-head">Choose from our competitive pricing options to get the best value for your car wash.</p>
+           
+           <div style="border-radius: 20px; overflow: hidden;">
+            <table style="border-radius: 20px;">
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Price</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   
+                    <tr>
+                        <td>Exterior</td>
+                        <td>$20</td>
+                        <td>
+                            <li>Wash and wax</li>
+                            <li>Wheel clean and shine</li>
+                            <li>Engine bay clean</li>
+                            <li>Exhaust pipe clean and shine</li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Interior</td>
+                        <td>$35</td>
+                        <td>
+                            <li>Vacuum and carpet valet</li>
+                            <li>Interior wipe and shine</li>
+                            <li>Fragrance to make your car smell brand new</li>
+                            <li>Boot clean, vacuum, and wipe</li>
+                            <li>Window wipe</li>
+                        </td>
+                    </tr>
+                     <tr>
+                        <td>Standard</td>
+                        <td>$35</td>
+                        <td>
+                            <li>Vacuum</li>
+                            <li>Wash and wax</li>
+                            <li>Wheel clean and shine</li>
+                            <li>Interior wipe and shine</li>
+                        </td>
+                    </tr>
+                     <tr>
+                        <td>Supreme</td>
+                        <td>$40</td>
+                        <td>
+                            <li>Removes dirt and grime from the exterior, protecting the paint, and giving a clean shine.</li>
+                            <li>Vacuums and cleans the interior, improving the overall look and feel.</li>
+                            <li>Wheels and tires are cleaned and shined for a polished appearance.</li>
+                            <li>Interior surfaces are wiped and shined for a fresh, interior with a polish to make it shine.</li>
+                            <li>provides a ultra glossy and clean car.</li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Premium</td>
+                        <td>$50</td>
+                        <td>
+                            <li>Vacuum and carpet valet</li>
+                            <li>Wash and wax</li>
+                            <li>Wheel clean and shine</li>
+                            <li>Interior wipe and shine</li>
+                            <li>Fragrance to make your car smell brand new</li>
+                            <li>Engine bay clean</li>
+                            <li>Exhaust pipe clean and shine</li>
+                            <li>Boot clean, vacuum, and wipe</li>
+                            <li>Window wipe</li>
+                        </td>
+                    </tr>
+                   
+                </tbody>
+            </table>
+            </div>
+</div>
+        </section>
+       
+
+             
+
+
+
+
+
+
+
+
+
+
+        <section id="location">
+            
+            
+            
+            
+            
+              <!-- Create a container div for the iframe -->
+   
+            
+            
+             <blockquote>
+              <h1>Our local area.</h1>
+            <p style="color: white;"> If you are not in the circle (shown below), then we are not in your local area. 
+                Of course everyone is welcome here, but this is our area.</p>
+             </blockquote>
+
+</section>
+
+<section id="calendar" style="background-color: black; color: #333">
+    <div id="calendar-why-us" style="background-color: white; color: #333">
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<h1 color: #333;> Calendar </h1>
+<p style="color: #333;">Please check the table/calendar to ensure your car wash does not collide with other events.</p>
+    <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Pacific%2FAuckland&showTitle=1&showNav=1&showPrint=1&showTabs=1&mode=WEEK&src=bG9jYWxhdXRvY2FyZTEwQGdtYWlsLmNvbQ&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4ubmV3X3plYWxhbmQjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%2333B679&color=%230B8043" style="border:solid 1px #777; border-radius: 10px; background-color: green;" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+  <script>
+    function openCalendlyPopup(calendlyLink) {
+      Calendly.initPopupWidget({ url: calendlyLink });
+      return false;
+    }
+  </script>
+</section>
+
+
+
+
+
+
+
+<section id="advert" style="background-color: white; color: black;">
+  <div id="advert-why-us">
+ 
+
+  
+  
+  <div style="padding:56.25% 0 0 0;position:relative; border-radius: 20px;"><iframe src="https://player.vimeo.com/video/877751246?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;box-shadow: 0 0 40px yellow;" title="localautocare advert" style="border-radius: 20px;"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+
+
+
+
+
+
+    </section>
+
+<div class="why-us-logo-container" style="background-color: white; color: black;">
+    <div class="logo" style="width: 2%; height: auto;">
+        <img src="https://cdn2.iconfinder.com/data/icons/e-commerce-line-8-1/1024/help8-512.png" alt="Your Logo" style="width: 100px; height: auto; margin: 20px; border-radius: 10px; padding: 20px;">
+    </div>
+    
+    <section id="why-us" style="background-color: white; color: #333;">
+       <div id="why-us-div" style="background-color: white; color: black; box-shadow: 0 0 1px black; padding: 40px; border-radius: 20px;">
+        <h2 style="color: black;">Why Choose Us?</h2>
+        <p style=" color: black;">We're committed to providing the best car care services. Here are a few reasons to choose us:</p>
+
+       
+ 
+     <h3><i class="quality"><!-- Quality Service Icon -->
+<img src="https://cdn3.iconfinder.com/data/icons/e-commerce-558/512/Quality-512.png" alt="Quality Service Icon" width="32" height="32">
+</i>Quality Service</h3>
+            <p style=" color: black;">Our team is dedicated to delivering top-notch car care.</p>
+        
+
+       
+    <h3>
+        <img src="https://cdn0.iconfinder.com/data/icons/socio-technical-system/64/responsible-teamwork-success-manager-staff-512.png" alt="Experienced Staff Icon" width="32" height="32">
+        Experienced Staff
+    </h3>
+    <p style=" color: black;">Our professionals have years of experience in the industry.</p>
+
+            <h3><i class="customer"></i><img src="https://cdn4.iconfinder.com/data/icons/business-outline-the-capitalism/64/Customer_satisfied-512.png" alt="Customer Satisfaction Icon" width="32" height="32">
+ Customer Satisfaction</h3>
+            <p>We prioritize your satisfaction and convenience.</p>
+        
+    </section>
+ <section id="our-products" style="background-color: white;">
+        <h1 style="color: white; background-color: black; padding: 10px; border-radius: 10px;">What do we use on your car?</h1>
+
+        <h2 style="color: black; margin-left: 5px;">What we use outside</h2>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://9dbb1f6ce47d4ca3e397-fa5e19980981d5458cd0ea2d7efa41ab.ssl.cf1.rackcdn.com/products/photos/3c484407-f1cf-4b59-913b-99bdf0f25380.jpg" alt="Pressure Washer">
+            </div>
+            <div class="product-details">
+                <h2>Pressure Washer</h2>
+                <p>Powerful 1400W pressure washer for efficient cleaning.</p>
+                <a href="https://www.bunnings.co.nz/ryobi-1400w-1450psi-pressure-washer-racpws1_p0376772?store=9453&gad_source=1&gclid=Cj0KCQjw4vKpBhCZARIsAOKHoWQOeS1UXHmF_ZOcuikp_2V3zLEWGymYZRMN-cCs6odb0KJy6wCN6lQaAm5FEALw_wcB&gclsrc=aw.ds" class="mybutton">Learn More</a>
+            </div>
+        </div>
+
+       
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://ccapi.mitre10.co.nz/medias/sys_master/productimages/h5c/h2a/8803673210910/Mitre10-1500x1500_174014xlg/Mitre10-1500x1500-174014xlg.jpg" alt="Pressure Sprayer">
+            </div>
+            <div class "product-details">
+                <h2>Pressure Sprayer</h2>
+                <p>Convenient pressure sprayer for various car cleaning tasks.</p>
+                <a href="https://ccapi.mitre10.co.nz/medias/sys_master/productimages/hcb/h89/8798400184350/174014xlg/174014xlg.jpg" class="mybutton">Learn More</a>
+            </div>
+        </div>
+
+        <h2 style="color: black;">What we use inside</h2>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://www.thewarehouse.co.nz/dw/image/v2/BDMG_PRD/on/demandware.static/-/Sites-twl-master-catalog/default/dw095a9b28/images/hi-res/29/72/R1178951_30.jpg?sw=765&sh=765.jpg" alt="Leather/Plastic Polish">
+            </div>
+            <div class="product-details">
+                <h2>Leather/Plastic Polish and Protectant</h2>
+                <p>High-quality polish and protectant for your car's interior.</p>
+                <a href="https://www.thewarehouse.co.nz/p/crc-liquid-armour-250ml/R1178951.html?&&&&gclsrc=aw.ds&gad_source=1&gclid=Cj0KCQjw4vKpBhCZARIsAOKHoWT0zgsXAC1yewTRZXdPT9r-h-Aa-pE73APE-HUPNFIJhYS38E3c2QMaAjWVEALw_wcB&gclsrc=aw.ds" class="mybutton">Learn More</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://www.briscoes.co.nz/globalassets/productimages/briscoes/1098467_00/1098467_00_default_1.jpg/CatalogContentDetails-986308-800-800-75-0,0.jpg" alt="Vacuum Cleaner">
+            </div>
+            <div class="product-details">
+                <h2>Vacuum Cleaner</h2>
+                <p>High-performance bagless vacuum cleaner for thorough cleaning.</p>
+                <a href="https://www.briscoes.co.nz/product/1098467/electrolux-ease-c3-origin-bagless-vacuum-balitic-blue-ec31-2/" class="mybutton">Learn More</a>
+            </div>
+        </div>
+
+       
+
+        <h1 style="color: black;">What we use inside/outside</h1>
+ <div class="product-card">
+            <div class="product-image">
+                <img src="https://www.repco.co.nz/medias/sys_master/images/sys-master/images/had/h13/10719505186846/A1336393_1/A1336393-1.jpg" alt="Sponge, Chamois, Microfibre Cloth">
+            </div>
+            <div class="product-details">
+                <h2>Sponge, Chamois, Microfibre Cloth</h2>
+                <p>High-quality cleaning tools for maintaining your car's shine.</p>
+                <a href="https://www.repco.co.nz/car-care-panel/car-care-accessories/car-wash-sponge-mitts/gear-up-external-wash-pack-3pc-guwp3/p/A1336393?kwSearch=spinge" class="mybutton">Learn More</a>
+            </div>
+        </div>
+
+ <div class="product-card">
+            <div class="product-image">
+                <img src="https://www.supercheapauto.co.nz/dw/image/v2/BBRV_PRD/on/demandware.static/-/Sites-srg-internal-master-catalog/default/dwadbf7ffd/images/366360/SCA_366360_hi-res.jpg?sw=1000&sh=1000&sm=fit" alt="Wash and Wax">
+            </div>
+            <div class="product-details">
+                <h2>Wash and Wax</h2>
+                <p>Quality wash and wax solution for a clean and shiny car finish.</p> 
+    <div id="productStatus" class="mybutton"></div>
+                <a href="https://www.supercheapauto.co.nz/p/armor-all-armor-all-wash-wax-1.25-litre/366360.html?gad_source=1&gclid=Cj0KCQjw4vKpBhCZARIsAOKHoWSmPI5Yh2aobAC8zmFaRZKekJnemgNfYBawkYliVvfq0g_aZoUR4hsaAqxSEALw_wcB&gclsrc=aw.ds" class="mybutton">Learn More</a>
+            </div>
+        </div>
+
+
+
+
+
+
+
+<div class="product-card" style="color: white; background-color: black;">
+    <div class="product-image">
+        <img src="https://9dbb1f6ce47d4ca3e397-fa5e19980981d5458cd0ea2d7efa41ab.ssl.cf1.rackcdn.com/products/photos/3c484407-f1cf-4b59-913b-99bdf0f25380.jpg" alt="Pressure Washer">
+    </div>
+    <div class="product-details">
+        <h2>Pressure Washer</h2>
+        <p>Powerful 1400W pressure washer for efficient cleaning.</p>
+        <a href="https://www.bunnings.co.nz/ryobi-1400w-1450psi-pressure-washer-racpws1_p0376772?store=9453&gad_source=1&gclid=Cj0KCQjw4vKpBhCZARIsAOKHoWQOeS1UXHmF_ZOcuikp_2V3zLEWGymYZRMN-cCs6odb0KJy6wCN6lQaAm5FEALw_wcB&gclsrc=aw.ds" class="mybutton">Learn More</a>
+        
+        <!-- Timer for running low -->
+        <div id="pressureWasherTimer"></div>
+    </div>
+</div>
+
+
+    </section>
+
+    </div>
+</div>
+
+</div>
+</div>
+
+
+
+
+   
+        <section id="contact" style="background-color: #C1F200;">
+            <div id="contact-div" style="background-color: black; padding: 20px; border-radius: 20px; box-shadow: 0 0 20px green; color: white;">
+            <h2>Contact Us!</h2>
+            <p>Have any questions? Want to book a car detail? Contact us:</p>
+            <p>
+            TEXT: "Premium", "Standard", "Exterior" or "Interior".
+            </p>
+
+
+<a><iframe src="https://discord.com/widget?id=1169131917833146380&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+ <img src="https://i.pinimg.com/736x/33/4b/2d/334b2d47fbe070165ed26a8743ad27b9.jpg" alt="Discord Logo" style="width: 40px; height: auto;">
+</a>
+ <!-- Add a button with an ID -->
+            <button id="copy-button" class="mybutton">Copy Number</button>
+
+
+
+
+   
+            <p>
+                PH: (+64) 027 325 4365
+            </p>
+            <p>
+                EM: localautocare10@gmail.com
+            </p>
+            <div id="our-team-div">
+                <h1>Our Team </h1>
+                <li>Alex Wright - (founder)</li>
+                 <li>Thomas Haigh - (co-founder)</li>
+                </div>
+           
+<div id="selected-wash-message"></div>
+        </section>
+   
+        <section id="promotioncodes"  style="background-color: #C1F200; color: #333333;" >
+            <h2 style="color: #333333;">Promotions</h2>
+            <p style="color: #333333;">Check out our exclusive promotions and VIP card!</p>
+               
+
+
+                <h3>Apply Promotion Code</h3>
+                <input type="text" id="promo-code" class="inputs" placeholder="Enter Promotion Code">
+                <button id="apply-promo" class="mybutton">Apply</button>
+                <p id="promo-message" style="color: #333333;"></p>
+            </section>
+       
+           </div>
+
+
+
+
+
+
+
+
+<section id="promotions"  style="background-color: #ffffff; color: #333333;">
+    <div class="grid">
+ <div class="card-1">
+<img src="https://i.ibb.co/XVfhHsw/Screenshot-2023-10-16-at-21-34-26.png" style="border-radius: 20px; max-width: 100%; height: auto;">
+
+
+
+
+    </div>
+
+
+    <div class="card-1">
+       
+        <img src="https://i.ibb.co/zJFWBX8/Screenshot-2023-10-16-at-21-34-34.png" style="border-radius: 20px; width: 100%; height: auto;">
+
+
+    </div>
+
+
+
+
+    <div class="card-2">
+        <img src="https://i.ibb.co/w4xZmg9/Screenshot-2023-10-16-at-21-34-53.png" style="border-radius: 20px; width: 100%; height: auto;">
+       
+       
+            </div>
+
+
+
+
+   
+    <div class="card-2">
+
+
+        <img src="https://i.ibb.co/HKmPQbm/Screenshot-2023-10-16-at-21-35-02.png" style="border-radius: 20px; width: 100%; height: auto;">
+
+
+    </div>
+
+
+
+
+    <div class="card-3">
+        <img src="https://i.ibb.co/X3rnqgZ/Screenshot-2023-10-16-at-21-35-15.png" style="border-radius: 20px; width: 100%; height: auto;">
+       
+       
+            </div>
+           
+            <div class="card-3">
+       
+                <img src="https://i.ibb.co/ZWdmwZF/Screenshot-2023-10-16-at-21-35-22.png" style="border-radius: 20px; width: 100%; height: auto;">
+       
+            </div>
+
+
+    </div>
+   
+    </section>
+
+
+         
+
+
+
+
+
+
+
+
+
+
+
+          
+
+
+
+       
+            <footer>
+                <p>© 2023 Local AutoCare</p>
+            </footer>
+            <script>
+
+// Update the total cost function to include the custom wash
+function updateTotalCost() {
+  const washButtons = document.querySelectorAll(".wash-button");
+  let totalCost = 0;
+
+  // Calculate the cost of selected washes
+  washButtons.forEach(function (button) {
+    if (button.classList.contains("active")) {
+      const washType = button.getAttribute("data-wash-type");
+      totalCost += washCosts[washType];
+    }
+  });
+
+  // Calculate the cost of additional services
+  const additionalServicesCheckboxes = document.querySelectorAll(".additional-service");
+  additionalServicesCheckboxes.forEach(function (checkbox) {
+    if (checkbox.checked) {
+      const serviceType = checkbox.getAttribute("data-service-type");
+      totalCost += additionalServices[serviceType];
+    }
+  });
+
+  // Calculate the cost of the custom wash options
+  const customWashCheckboxes = document.querySelectorAll(".checkbox-custom");
+  customWashCheckboxes.forEach(function (checkbox) {
+    if (checkbox.checked) {
+      const customWashCost = parseInt(checkbox.value);
+      totalCost += customWashCost;
+    }
+  });
+
+  const carType = document.getElementById("car-type").value;
+  if (carType === "suv") {
+    totalCost += 10; // Add $10 for SUV
+  } else if (carType === "anythingBigger") {
+    totalCost += 30; // Add $30 for anything bigger
+  }
+
+  const totalCostValue = document.getElementById("total-cost-value");
+  totalCostValue.textContent = "$" + totalCost.toFixed(2); // Display the total cost
+}
+
+// Add event listeners to custom wash checkboxes
+const customWashCheckboxes = document.querySelectorAll(".checkbox-custom");
+customWashCheckboxes.forEach(function (checkbox) {
+  checkbox.addEventListener("change", updateTotalCost);
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Function to calculate the total cost for the custom wash
+function calculateCustomWashCost() {
+  const customWashSelect = document.getElementById("custom-wash");
+  const customWashCost = parseInt(customWashSelect.value);
+
+  return customWashCost;
+}
+
+// Update the total cost function to include the custom wash
+function updateTotalCost() {
+  const washButtons = document.querySelectorAll(".wash-button");
+  let totalCost = 0;
+
+  // Calculate the cost of selected washes
+  washButtons.forEach(function (button) {
+    if (button.classList.contains("active")) {
+      const washType = button.getAttribute("data-wash-type");
+      totalCost += washCosts[washType];
+    }
+  });
+
+  // Calculate the cost of additional services
+  const additionalServicesCheckboxes = document.querySelectorAll(".additional-service");
+  additionalServicesCheckboxes.forEach(function (checkbox) {
+    if (checkbox.checked) {
+      const serviceType = checkbox.getAttribute("data-service-type");
+      totalCost += additionalServices[serviceType];
+    }
+  });
+
+  // Calculate the cost of the custom wash
+  totalCost += calculateCustomWashCost();
+
+  const carType = document.getElementById("car-type").value;
+  if (carType === "suv") {
+    totalCost += 10; // Add $10 for SUV
+  } else if (carType === "anythingBigger") {
+    totalCost += 30; // Add $30 for anything bigger
+  }
+
+  const totalCostValue = document.getElementById("total-cost-value");
+  totalCostValue.textContent = "$" + totalCost.toFixed(2); // Display the total cost
+}
+
+// Add an event listener to the custom wash select element
+const customWashSelect = document.getElementById("custom-wash");
+customWashSelect.addEventListener("change", updateTotalCost);
+
+
+
+
+
+  
+    // Function to show service details based on the selected service type
+function showService(serviceType) {
+  // Hide all service details
+  const serviceDetails = document.querySelectorAll(".service-details > div");
+  serviceDetails.forEach((element) => {
+    element.style.display = "none";
+  });
+
+  // Show the selected service details
+  const serviceElement = document.getElementById(serviceType + "-service");
+  if (serviceElement) {
+    serviceElement.style.display = "block";
+  }
+
+  // Update the selected service type in the dropdown
+  const selectedCarType = document.getElementById("selected-car-type");
+  selectedCarType.textContent = document.getElementById("car-type").value;
+}
+
+// Add click event listeners to the wash buttons
+const washButtons = document.querySelectorAll(".wash-button");
+washButtons.forEach(function (button) {
+  button.addEventListener("click", function () {
+    const washType = button.textContent;
+    selectedWashMessage.textContent = `You have selected the ${washType} Wash.`;
+  });
+});
+
+// Apply Promotion Code Function
+function applyPromotionCode() {
+  const promoCodeInput = document.getElementById("promo-code");
+  const promoMessage = document.getElementById("promo-message");
+
+  // Get the entered promotion code
+  const enteredCode = promoCodeInput.value;
+
+  // Replace "YOUR_PROMO_CODE" with your actual promo code
+  const validPromoCode = "welcome";
+
+  if (enteredCode === validPromoCode) {
+    // Apply the promotion (you can define your promotion logic here)
+    promoMessage.textContent = "Promotion applied successfully! You have earned a 20% discount on any wash!";
+    updateTotalCost(); // Update the total cost when a promotion is applied
+  } else {
+    promoMessage.textContent = "Invalid promotion code.";
+  }
+}
+
+// Add click event listener to apply promotion code button
+const applyPromoButton = document.getElementById("apply-promo");
+applyPromoButton.addEventListener("click", applyPromotionCode);
+
+// Copy Phone Number to Clipboard
+const copyButton = document.getElementById("copy-button");
+const phoneNumber = "(+64) 027 325 4365";
+
+copyButton.addEventListener("click", function () {
+  // Create a temporary input element to copy the phone number
+  const tempInput = document.createElement("input");
+  tempInput.value = phoneNumber;
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  document.execCommand("copy");
+  document.body.removeChild(tempInput);
+  alert("Phone number copied to clipboard.");
+});
+
+// Function to update the total cost based on selected services and car size
+function updateTotalCost() {
+  const washButtons = document.querySelectorAll(".wash-button");
+  let totalCost = 0;
+
+  // Calculate the cost of selected washes
+  washButtons.forEach(function (button) {
+    if (button.classList.contains("active")) {
+      const washType = button.getAttribute("data-wash-type");
+      totalCost += washCosts[washType];
+    }
+  });
+
+  // Calculate the cost of additional services
+  const additionalServicesCheckboxes = document.querySelectorAll(".additional-service");
+  additionalServicesCheckboxes.forEach(function (checkbox) {
+    if (checkbox.checked) {
+      const serviceType = checkbox.getAttribute("data-service-type");
+      totalCost += additionalServices[serviceType];
+    }
+  });
+
+  const carType = document.getElementById("car-type").value;
+  if (carType === "suv") {
+    totalCost += 10; // Add $10 for SUV
+  } else if (carType === "anythingBigger") {
+    totalCost += 30; // Add $30 for anything bigger
+  }
+
+  const totalCostValue = document.getElementById("total-cost-value");
+  totalCostValue.textContent = "$" + totalCost.toFixed(2); // Display the total cost
+}
+
+// Initial update of the total cost
+updateTotalCost();
+
+// JavaScript code to send the email using EmailJS
+function sendEmail() {
+  const name = document.getElementById("full-name").value;
+  const email = document.getElementById("email").value;
+  const phone = document.getElementById("phone").value;
+  const date = document.getElementById("preferred-date").value;
+  const time = document.getElementById("preferred-time").value;
+  const comments = document.getElementById("comments").value;
+
+  emailjs.send("service_len4hhc", "template_e27klcx", {
+    from_name: name,
+    from_email: email,
+    phone_number: phone,
+    appointment_date: date,
+    appointment_time: time,
+    user_comments: comments
+  }).then(
+    function (response) {
+      alert("Appointment request sent successfully!");
+    },
+    function (error) {
+      alert("Error sending appointment request:", error);
+    }
+  );
+}
+
+// Define wash costs
+const washCosts = {
+  basic: 10,
+  standard: 20,
+  premium: 30
+};
+
+// Define additional service costs
+const additionalServices = {
+  interior: 20,
+  wax: 15
+};
+
+// Get the button and email input elements
+const copyEmailButton = document.getElementById("copy-email-button");
+const emailInput = document.getElementById("email-input");
+
+// Set the email address to copy
+emailInput.value = "localautocare10@gmail.com";
+
+// Add a click event listener to the button
+copyEmailButton.addEventListener("click", function () {
+  // Select the email input text
+  emailInput.select();
+  emailInput.setSelectionRange(0, 99999); // For mobile devices
+
+  // Copy the email text to the clipboard
+  document.execCommand("copy");
+
+  // Deselect the input
+  emailInput.setSelectionRange(0, 0);
+
+  // Alert the user that the email is copied
+  alert("Email copied to clipboard: " + emailInput.value);
+});
+
+// Get the "Supreme" button by its class
+const supremeButton = document.querySelector(".supreme");
+
+// Add a click event listener to the "Supreme" button
+supremeButton.addEventListener("click", function () {
+  // Toggle a class when the button is clicked
+  supremeButton.classList.toggle("active");
+
+  // You can add more functionality here if needed
+  if (supremeButton.classList.contains("active")) {
+    // The button is now active
+    console.log("Supreme button is active");
+    // Perform additional actions when the button is active
+  } else {
+    // The button is no longer active
+    console.log("Supreme button is not active");
+    // Perform additional actions when the button is not active
+  }
+});
+
+document.getElementById("showInstructionsButton").addEventListener("click", function () {
+  document.getElementById("instructionsPopup").style.display = "block";
+});
+
+document.getElementById("closeInstructionsButton").addEventListener("click", function () {
+  document.getElementById("instructionsPopup").style.display = "none";
+});
+
+document.querySelectorAll('nav a').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    const targetId = this.getAttribute('href').substring(1); // Get the target section's ID
+    const targetSection = document.getElementById(targetId);
+
+    if (targetSection) {
+      const yOffset = -targetSection.offsetHeight / 2; // Adjust to move the section to the middle of the viewport
+      const targetY = targetSection.getBoundingClientRect().top + window.scrollY + yOffset;
+
+      // Scroll to the target section smoothly
+      window.scrollTo({
+        behavior: 'smooth',
+        top: targetY
+      });
+    }
+  });
+});
+
+// Function to change the website theme
+function changeTheme() {
+  const themeSelect = document.getElementById("theme-select");
+  const selectedTheme = themeSelect.options[themeSelect.selectedIndex].value;
+  const buttonStyle = document.getElementById("button-style");
+
+  // Define your button styles for different themes here
+  const buttonStyles = {
+    default: ".mybutton { background-color: green; color: white; } .mybutton:hover { background-color: #77cc33; }",
+    yellow: ".mybutton { background-color: yellow; color: black; } .mybutton:hover { background-color: #ffcc00; }",
+    red: ".mybutton { background-color: red; color: white; } .mybutton:hover { background-color: #cc0000; }",
+    blue: ".mybutton { background-color: blue; color: white; } .mybutton:hover { background-color: #0000cc; }",
+  };
+
+  buttonStyle.innerHTML = buttonStyles[selectedTheme];
+}
+
+// Copy Phone Number to Clipboard
+const copyPhoneButton = document.getElementById("copy-phone-button");
+const phoneNumberInput = document.getElementById("phone-number");
+
+copyPhoneButton.addEventListener("click", function () {
+  phoneNumberInput.select();
+  document.execCommand("copy");
+  alert("Phone number copied to clipboard.");
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const toggleButton = document.getElementById("toggle-button");
+
+toggleButton.addEventListener("click", function () {
+  // Get the button's current class
+  const currentClass = toggleButton.className;
+
+  // Toggle between the class names
+  if (currentClass === "shiny-button") {
+    toggleButton.className = "normal-button";
+  } else {
+    toggleButton.className = "mybutton";
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Get the purchase date and calculate product lifespan
+        const purchaseDate = new Date('2023-09-09'); // Replace with actual purchase date
+        const productLifespan = 6 * 30 * 24 * 60 * 60 * 1000; // 6 months in milliseconds
+
+        // Calculate remaining time
+        const currentDate = new Date();
+        const timeRemaining = purchaseDate.getTime() + productLifespan - currentDate.getTime();
+
+        // Check if the product is running low (within the last 2 weeks)
+        if (timeRemaining <= 2 * 7 * 24 * 60 * 60 * 1000) {
+            const productStatus = document.getElementById("productStatus");
+            productStatus.innerText = 'Your product is running low. Consider ordering a replacement.';
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // Calculate the remaining time for the Pressure Washer
+function calculateRemainingTime() {
+    const initialQuantity = 20; // Initial quantity of the product
+    const currentQuantity = 5; // Current quantity of the product
+
+    const timePeriodMonths = 6; // Time period in months
+
+    // Calculate the remaining time in days
+    const remainingDays = (currentQuantity / initialQuantity) * (timePeriodMonths * 30);
+
+    return remainingDays;
+}
+
+// Display the product status
+function displayProductStatus() {
+    const remainingDays = calculateRemainingTime();
+    const productStatus = document.getElementById("pressureWasherTimer");
+
+    if (remainingDays >= 0 && remainingDays <= 14) {
+        productStatus.textContent = "Running Low";
+    } else {
+        productStatus.textContent = "In Stock";
+    }
+}
+
+// Call the function to display the product status
+displayProductStatus();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        function validateForm() {
+            // Get the values from the username and password fields
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // You can add your validation logic here.
+            // For a simple example, let's check if both fields are not empty.
+            if (username === "" || password === "") {
+                alert("Both username and password are required.");
+                return false; // Prevent the form from submitting
+            }
+
+            // If validation passes, you can send the form data to a server for further processing.
+            // For this example, we'll just display a success message.
+            alert("Sign-in successful!");
+
+            return true; // Allow the form to submit
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        const express = require("express");
+const { join } = require("path");
+const morgan = require("morgan");
+const helmet = require("helmet");
+const app = express();
+
+app.use(morgan("dev"));
+app.use(helmet());
+app.use(express.static(join(__dirname, "public")));
+
+app.get("/auth_config.json", (req, res) => {
+  res.sendFile(join(__dirname, "auth_config.json"));
+});
+
+app.get("/*", (_, res) => {
+  res.sendFile(join(__dirname, "index.html"));
+});
+
+process.on("SIGINT", function() {
+  process.exit();
+});
+
+module.exports = app;
+
+</script>
+        </body>
+        </html>
+           
+
+
+
